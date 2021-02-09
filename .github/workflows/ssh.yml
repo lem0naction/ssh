@@ -6,5 +6,10 @@ jobs:
   Ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - name: SSH connection to Actions
+    - name: 'Ready'
+      run: |
+        touch /tmp/keepalive
+
+  
+    - name: 'SSH'
       uses: lem0nb/debugger-action@master
